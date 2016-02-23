@@ -8,6 +8,7 @@ version          '0.1.1'
 
 depends "apache2"
 depends "raven-php"
+depends "raven-nodejs"
 depends "raven-deploy"
 
 recipe "potg-app::default", "set up potg dependencies"
