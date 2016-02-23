@@ -23,7 +23,7 @@ attribute "potg_app/app_path",
 	:description => "Path where application is checked out. Will have 'current' appended",
 	:required => "recommended",
 	:type => "string",
-	:recipes => ["potg_app::deploy_tag"],
+	:recipes => ["potg-app::deploy_tag"],
 	:default => "/home/webapps/potg"
 
 attribute "potg_app/repository",
@@ -31,7 +31,7 @@ attribute "potg_app/repository",
 	:description => "Repository in which the app resides",
 	:required => "recommended",
 	:type => "string",
-	:recipes => ["potg_app::deploy_tag"],
+	:recipes => ["potg-app::deploy_tag"],
 	:default => "git@github.com:raventools/potg.git"
 
 attribute "potg_app/revision",
@@ -39,7 +39,7 @@ attribute "potg_app/revision",
 	:description => "Revision to check out",
 	:required => "recommended",
 	:type => "string",
-	:recipes => ["potg_app::deploy_tag"],
+	:recipes => ["potg-app::deploy_tag"],
 	:default => "master"
 
 attribute "potg_app/domains",
@@ -47,6 +47,6 @@ attribute "potg_app/domains",
 	:description => "Domains this vhost answers to. Comman-separated list, with first one being canonical",
 	:required => "recommended",
 	:type => "array",
-	:recipes => ["potg_app::deploy_tag"],
+	:recipes => ["potg-app::deploy_tag"],
 	:default => ["potg.raven-seo-tools.com"]
 
